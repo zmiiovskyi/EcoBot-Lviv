@@ -3,10 +3,11 @@ import logging
 from aiogram import Bot, Dispatcher, types, F
 from aiogram.filters.command import Command
 
+from config import TOKEN
 from keyboard import main_kb, keyboard
 
 logging.basicConfig(level=logging.INFO)
-bot = Bot(token="7609322489:AAHJdc6Dlk-BU2uxH1lAgR39xHC4ujIUG50")
+bot = Bot(token=TOKEN)
 dp = Dispatcher()
 
 @dp.message(Command("start"))
