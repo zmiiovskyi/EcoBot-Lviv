@@ -3,7 +3,7 @@ import logging
 from aiogram import Bot, Dispatcher, types, F
 from aiogram.filters.command import Command
 
-from keyboard import main_kb
+from keyboard import main_kb, keyboard
 
 logging.basicConfig(level=logging.INFO)
 bot = Bot(token="7609322489:AAHJdc6Dlk-BU2uxH1lAgR39xHC4ujIUG50")
@@ -33,7 +33,7 @@ async def eco(message: types.Message) -> None:
 
     await bot.send_message(
         chat_id=message.chat.id,
-        text="⚠️ Будьте уважні\nОчистіть від залишків їжі, спресуйте, здайте на перероблення"
+        text="⚠️ Будьте уважні\nОчистіть від залишків їжі, спресуйте, здайте на перероблення", reply_markup=keyboard
     )
 
 @dp.message(F.text=="🔄 ЯК СОРТУВАТИ")
