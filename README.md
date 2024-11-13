@@ -1,1 +1,1 @@
-@eco_lviv_bot
+tg: @eco_lviv_bot
