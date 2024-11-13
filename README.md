@@ -1,1 +1,1 @@
-# EcoBot-Lviv
+@eco_lviv_bot
