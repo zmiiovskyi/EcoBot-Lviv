@@ -12,7 +12,6 @@ main_kb = ReplyKeyboardMarkup(
             KeyboardButton(text="🔄 ЯК СОРТУВАТИ"),
         ],
         [
-#            KeyboardButton(text="ТИПИ ПЛАСТИКУ"),
             KeyboardButton(text="❌ МІФИ"),
             KeyboardButton(text="📚 ПРО ПРОЕКТ"),
         ]
@@ -20,3 +19,7 @@ main_kb = ReplyKeyboardMarkup(
     resize_keyboard=True,
     selective=True
 )
+
+keyboard = InlineKeyboardMarkup(inline_keyboard=[
+    [InlineKeyboardButton(text="📍 ПУНКТИ", url="https://www.google.com/maps/d/edit?mid=1nM3V_Ip1yhBySUnwOeXWbGmBJ6YRnDE&usp=sharing")]
+])
